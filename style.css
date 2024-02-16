@@ -1,80 +1,95 @@
 header{
-    display: inline-block;
-    display: flex;
-    flex: wrap;
+
+    display: grid;
+    grid-template-rows: 100px auto;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+}
+.title{
+    background-color: rgb(255, 208, 0);
+    grid-column: 1/7;
+    grid-row: 1/2;
+   
+
+}
+.nav1{
+    background-color: pink;
+    grid-column: 7/8;
+    grid-row: 1/2;
+  
+}
+.nav2{
+    background-color: pink;
+   grid-column: 8/9;
+    grid-row: 1/2;
    
 }
-#title{
-    background-color: rgb(255, 230, 0);
-    width: 80rem;
-    height: 5rem;
-}
-nav{
+.nav3{
     background-color: pink;
-    margin: 5px;
-}
-#nav1,#nav2,#nav3{
-    height: 5rem;
-    width: 20rem;
+    grid-column: 9/10;
+    grid-row: 1/2;
 }
 main{
-    display: grid;
-    grid-template-columns: auto auto;
-    
-}
-
-.meta{
-    display: grid;
-    grid-template-columns: auto auto;
-    
-
-}
-.maincontainer{
-    width: 95rem;
-    height: 36.5rem;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: auto auto;
 }
 .postT{
     background-color: skyblue;
-    margin: 5px;
-   height: 5rem;
+    grid-row: 1/15;
+    grid-column: 1/8;
 
 }
 .postM{
     background-color: lightgreen;
-    height: 30.4rem;
-    margin: 5px;
-   
-}
-.mainC{
-    background-color: gray;
-    margin: 5px;
-   height: 15rem;
+    grid-row: 15/90;
+    grid-column: 1/4;
 
 }
+
+.mainC{
+    background-color: gray;
+    grid-row: 15/50;
+    grid-column: 4/8;
+}
 .imgC{
-    background-color: yellow;
-    margin: 5px;
-   height: 15rem;
-}
-footer{
-    background-color: rgb(163, 114, 94);
-    height: 5rem;
-    width: auto;
-    margin: 5px;
-}
-.sidecontainer{
-    display: grid;
+    background-color: rgb(248, 248, 61);
+    grid-row: 50/90;
+    grid-column: 4/8;
    
 }
+
+
 .sidebar{
     background-color: rgb(253, 166, 132);
-    margin: 5px;
+    grid-row: 1/30;
+    grid-column: 8/10;
+    
 }
 .ads{
     background-color: green;
-    margin: 5px;
+    grid-row: 30/60;
+    grid-column: 8/10;
 }
 .others{
     background-color: rgb(214, 69, 214);
-    margin: 5px;
+    grid-row: 60/90;
+    grid-column: 8/10;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+footer{
+    
+    display: grid;
+    grid-template-rows: auto 100px;
+    grid-template-columns: auto auto;
+    grid-gap: 5px 5px;
+}
+.foot{
+    background-color: rgb(163, 114, 94);
+   grid-column: 1/10;
+   grid-row: 2/5;
 }
