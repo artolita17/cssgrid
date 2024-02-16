@@ -1,0 +1,80 @@
+header{
+    display: inline-block;
+    display: flex;
+    flex: wrap;
+   
+}
+#title{
+    background-color: rgb(255, 230, 0);
+    width: 80rem;
+    height: 5rem;
+}
+nav{
+    background-color: pink;
+    margin: 5px;
+}
+#nav1,#nav2,#nav3{
+    height: 5rem;
+    width: 20rem;
+}
+main{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+
+.meta{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+
+}
+.maincontainer{
+    width: 95rem;
+    height: 36.5rem;
+}
+.postT{
+    background-color: skyblue;
+    margin: 5px;
+   height: 5rem;
+
+}
+.postM{
+    background-color: lightgreen;
+    height: 30.4rem;
+    margin: 5px;
+   
+}
+.mainC{
+    background-color: gray;
+    margin: 5px;
+   height: 15rem;
+
+}
+.imgC{
+    background-color: yellow;
+    margin: 5px;
+   height: 15rem;
+}
+footer{
+    background-color: rgb(163, 114, 94);
+    height: 5rem;
+    width: auto;
+    margin: 5px;
+}
+.sidecontainer{
+    display: grid;
+   
+}
+.sidebar{
+    background-color: rgb(253, 166, 132);
+    margin: 5px;
+}
+.ads{
+    background-color: green;
+    margin: 5px;
+}
+.others{
+    background-color: rgb(214, 69, 214);
+    margin: 5px;
+}
